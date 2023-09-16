@@ -1,6 +1,4 @@
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 static int	ft_wordlength(char const *str, char c)
 {
