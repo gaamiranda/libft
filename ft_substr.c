@@ -14,6 +14,8 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
         ptr[i] = '\0';
         return (ptr);
     }
+    if (len > ft_strlen(s) - start)
+            len = ft_strlen(s) - start;
     ptr = (char*)malloc(sizeof(char) * (len + 1));
     if (ptr == NULL)
         return(NULL);
